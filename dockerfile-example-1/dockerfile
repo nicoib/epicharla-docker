@@ -1,0 +1,7 @@
+FROM nginx:1.17.1-alpine
+
+LABEL author="Nicolas Ibarra"
+
+COPY nginx.conf /etc/nginx/nginx.conf
+
+COPY /dist/dockerfile1 /usr/share/nginx/html
