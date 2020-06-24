@@ -1,0 +1,7 @@
+FROM ubuntu:16.04
+
+RUN mkdir /myvol
+
+VOLUME /myvol
+
+RUN echo 'Hello World' >> /myvol/hello
